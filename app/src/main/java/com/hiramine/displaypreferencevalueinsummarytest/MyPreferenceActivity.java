@@ -74,12 +74,6 @@ public class MyPreferenceActivity extends AppCompatActivity
 		// Summaryの更新
 		private void updateSummary( Preference preference )
 		{
-			// ListPreference
-			if( preference instanceof ListPreference )
-			{
-				ListPreference listPreference = (ListPreference)preference;
-				preference.setSummary( listPreference.getEntry() );
-			}
 			// EditTextPreference
 			if( preference instanceof EditTextPreference )
 			{
@@ -92,6 +86,12 @@ public class MyPreferenceActivity extends AppCompatActivity
 				{
 					preference.setSummary( editTextPreference.getText() );
 				}
+			}
+			// ListPreference
+			if( preference instanceof ListPreference )
+			{
+				ListPreference listPreference = (ListPreference)preference;
+				preference.setSummary( listPreference.getEntry() );
 			}
 			// MultiSelectListPreference
 			if( preference instanceof MultiSelectListPreference )
@@ -118,7 +118,7 @@ public class MyPreferenceActivity extends AppCompatActivity
 	protected void onCreate( Bundle savedInstanceState )
 	{
 		super.onCreate( savedInstanceState );
-		//setContentView( R.layout.activity_my_preference );
+
 		getFragmentManager().beginTransaction().replace( android.R.id.content, new MyPreferenceFragment() ).commit();
 
 		// アクションバーに前画面に戻る機能をつける
