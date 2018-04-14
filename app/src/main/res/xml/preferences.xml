@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="check_box_preference"
+        android:title="Check box preference"/>
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference"
+        android:title="Switch preference"/>
+    <EditTextPreference
+        android:defaultValue="@string/xyz"
+        android:key="edit_text_preference"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="summary"
+        android:title="Edit text preference"/>
+    <ListPreference
+        android:defaultValue="@string/str2"
+        android:entries="@array/entries_123"
+        android:entryValues="@array/values_123"
+        android:key="list_preference"
+        android:summary="summery"
+        android:title="List preference"/>
+    <MultiSelectListPreference
+        android:defaultValue="@array/values_empty"
+        android:entries="@array/entries_abc"
+        android:entryValues="@array/values_abc"
+        android:key="multi_select_list_preference"
+        android:title="Multi select list preference"/>
+
+</PreferenceScreen>

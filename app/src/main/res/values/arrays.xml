@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="entries_123">
+        <item>@string/item_1</item>
+        <item>@string/item_2</item>
+        <item>@string/item_3</item>
+    </string-array>
+
+    <string-array name="values_123">
+        <item>@string/str1</item>
+        <item>@string/str2</item>
+        <item>@string/str3</item>
+    </string-array>
+
+    <string-array name="entries_abc">
+        <item>@string/item_a</item>
+        <item>@string/item_b</item>
+        <item>@string/item_c</item>
+    </string-array>
+
+    <string-array name="values_abc">
+        <item>@string/a</item>
+        <item>@string/b</item>
+        <item>@string/c</item>
+    </string-array>
+
+    <string-array name="values_empty">
+    </string-array>
+
+</resources>

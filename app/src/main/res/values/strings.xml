@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DisplayPreferenceValueInSummaryTest</string>
+
+    <!-- MainActivity メニュー用 -->
+    <string name="settings">Settings</string>
+
+    <!-- Preferences用 -->
+    <string name="xyz">xyz</string>
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="str1">1</string>
+    <string name="str2">2</string>
+    <string name="str3">3</string>
+    <string name="item_a">Item A</string>
+    <string name="item_b">Item B</string>
+    <string name="item_c">Item C</string>
+    <string name="a">a</string>
+    <string name="b">b</string>
+    <string name="c">c</string>
+
+</resources>
