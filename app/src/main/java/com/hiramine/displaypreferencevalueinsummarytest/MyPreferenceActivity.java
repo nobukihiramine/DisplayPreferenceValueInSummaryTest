@@ -7,8 +7,10 @@ import android.preference.MultiSelectListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceGroup;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import java.util.Set;
 
@@ -96,7 +98,6 @@ public class MyPreferenceActivity extends AppCompatActivity
 			{
 				MultiSelectListPreference multiSelectListPreference = (MultiSelectListPreference)preference;
 				Set<String> setstrValue = multiSelectListPreference.getValues();
-				String strvalue = setstrValue.toString();
 				CharSequence[] aEntry = multiSelectListPreference.getEntries();
 				String strSummary = "";
 				for( String strValue : setstrValue )
@@ -119,5 +120,21 @@ public class MyPreferenceActivity extends AppCompatActivity
 		super.onCreate( savedInstanceState );
 		//setContentView( R.layout.activity_my_preference );
 		getFragmentManager().beginTransaction().replace( android.R.id.content, new MyPreferenceFragment() ).commit();
+
+		// アクションバーに前画面に戻る機能をつける
+		ActionBar actionBar = getSupportActionBar();
+		actionBar.setDisplayHomeAsUpEnabled( true );
+	}
+
+	@Override
+	public boolean onOptionsItemSelected( MenuItem item )
+	{
+		switch( item.getItemId() )
+		{
+			case android.R.id.home:
+				finish();
+				return true;
+		}
+		return super.onOptionsItemSelected( item );
 	}
 }

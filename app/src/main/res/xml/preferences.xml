@@ -2,16 +2,16 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <CheckBoxPreference
-        android:defaultValue="true"
-        android:key="check_box_preference"
+        android:defaultValue="false"
+        android:key="on_off_preference_1"
         android:title="Check box preference"/>
     <SwitchPreference
-        android:defaultValue="false"
-        android:key="switch_preference"
+        android:defaultValue="true"
+        android:key="on_off_preference_2"
         android:title="Switch preference"/>
     <EditTextPreference
         android:defaultValue="@string/xyz"
-        android:key="edit_text_preference"
+        android:key="text_preference"
         android:selectAllOnFocus="true"
         android:singleLine="true"
         android:summary="summary"
