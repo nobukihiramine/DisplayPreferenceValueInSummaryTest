@@ -5,7 +5,7 @@ Preference値をSummary欄に表示する方法。
 　preference.setSummary関数で、SummaryにPreference値を設定する。」
 
 ## Screenshots : スクリーンショット
-<img src="screenshots/screenshot_01.png" width="256" alt="Screenshot"/><img src="screenshots/screenshot_02.png" width="256" alt="Screenshot"/><img src="screenshots/screenshot_03.png" width="256" alt="Screenshot"/><img src="screenshots/screenshot_04.png" width="256" alt="Screenshot"/><img src="screenshots/screenshot_05.png" width="256" alt="Screenshot"/><img src="screenshots/screenshot_06.png" width="256" alt="Screenshot"/><img src="screenshots/screenshot_07.png" width="256" alt="Screenshot"/>
+<img src="screenshots/Screenshot_01.png" width="256" alt="Screenshot"/><img src="screenshots/Screenshot_02.png" width="256" alt="Screenshot"/><img src="screenshots/Screenshot_03.png" width="256" alt="Screenshot"/><img src="screenshots/Screenshot_04.png" width="256" alt="Screenshot"/><img src="screenshots/screenshot_05.png" width="256" alt="Screenshot"/><img src="screenshots/screenshot_06.png" width="256" alt="Screenshot"/><img src="screenshots/screenshot_07.png" width="256" alt="Screenshot"/>
 
 ## Requirements : 必要条件、依存関係
 - Android Studio 2.3.3
