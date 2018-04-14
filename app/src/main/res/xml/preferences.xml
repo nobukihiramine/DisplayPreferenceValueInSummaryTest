@@ -4,10 +4,12 @@
     <CheckBoxPreference
         android:defaultValue="false"
         android:key="on_off_preference_1"
+        android:summary="summary"
         android:title="Check box preference"/>
     <SwitchPreference
         android:defaultValue="true"
         android:key="on_off_preference_2"
+        android:summary="summary"
         android:title="Switch preference"/>
     <EditTextPreference
         android:defaultValue="@string/xyz"
@@ -28,6 +30,7 @@
         android:entries="@array/entries_abc"
         android:entryValues="@array/values_abc"
         android:key="multi_select_list_preference"
+        android:summary="summery"
         android:title="Multi select list preference"/>
 
 </PreferenceScreen>
