@@ -1,5 +1,6 @@
 # DisplayPreferenceValueInSummaryTest
 Preference値をSummary欄に表示する方法。
+
 要点としては、
 - PreferenceFragmentクラスの派生クラスを作成する。
 - onSharedPreferenceChanged関数をオーバーライドし、preference.setSummary関数で、SummaryにPreference値を設定する。
