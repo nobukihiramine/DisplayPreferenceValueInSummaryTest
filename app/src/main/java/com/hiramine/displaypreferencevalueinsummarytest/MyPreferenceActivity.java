@@ -97,9 +97,9 @@ public class MyPreferenceActivity extends AppCompatActivity
 			if( preference instanceof MultiSelectListPreference )
 			{
 				MultiSelectListPreference multiSelectListPreference = (MultiSelectListPreference)preference;
-				Set<String> setstrValue = multiSelectListPreference.getValues();
-				CharSequence[] aEntry = multiSelectListPreference.getEntries();
-				String strSummary = "";
+				Set<String>               setstrValue               = multiSelectListPreference.getValues();
+				CharSequence[]            aEntry                    = multiSelectListPreference.getEntries();
+				String                    strSummary                = "";
 				for( String strValue : setstrValue )
 				{
 					int index = multiSelectListPreference.findIndexOfValue( strValue );
@@ -123,7 +123,10 @@ public class MyPreferenceActivity extends AppCompatActivity
 
 		// アクションバーに前画面に戻る機能をつける
 		ActionBar actionBar = getSupportActionBar();
-		actionBar.setDisplayHomeAsUpEnabled( true );
+		if( null != actionBar )
+		{
+			actionBar.setDisplayHomeAsUpEnabled( true );
+		}
 	}
 
 	@Override
