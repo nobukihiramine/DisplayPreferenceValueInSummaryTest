@@ -78,14 +78,7 @@ public class MyPreferenceActivity extends AppCompatActivity
 			if( preference instanceof EditTextPreference )
 			{
 				EditTextPreference editTextPreference = (EditTextPreference)preference;
-				if( preference.getTitle().toString().toLowerCase().contains( "password" ) )
-				{
-					preference.setSummary( "******" );
-				}
-				else
-				{
-					preference.setSummary( editTextPreference.getText() );
-				}
+				preference.setSummary( editTextPreference.getText() );
 			}
 			// ListPreference
 			if( preference instanceof ListPreference )
